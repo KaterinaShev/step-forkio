@@ -1,0 +1,132 @@
+.people {
+    width: 100%;
+    background: url(../img/background_section-people3.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media (min-width: 480px) and (max-width: 992px) {
+        background: url(../img/background_section-people2.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    @media (min-width: 993px) {
+        background: url(../img/background_section-people.png);
+        background-position: center center;
+        background-size: cover;
+    }
+ 
+    &__title {
+        padding-top: 57px;
+        padding-bottom: 53px;
+        @include montserrat-bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: $white;
+        @media (min-width: 481px) and (max-width: 992px) {
+            font-size: 42px;
+            line-height: 44px;
+            margin-top: 87px;
+            padding-bottom: 88px;
+        }
+        @media (min-width: 993px) {
+            font-size: 48px;
+            line-height: 50px;
+            margin-top: 108px;
+            padding-bottom: 82px;
+        }
+    }
+    &__list {
+        display: grid;
+        align-items: baseline;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 45px;
+        padding: 0 25px;
+        @media (min-width: 480px) and (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 993px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        &-item {
+            text-align: center;
+            padding: 0 15px 45px 14px;
+            @media (min-width: 481px) and (max-width: 992px) {
+                padding: 0 25px 56px 20x;
+            }
+            @media (min-width: 993px) {
+                padding-bottom: 116px;
+            }
+
+            &-text {
+                @include lato-bold;
+                font-size: 16px;
+                line-height: 24px;
+                color: $white;
+                padding-top: 29px;
+                text-align: center;  
+            }
+        }
+    }
+    
+    &__subscribe {
+        position: relative;
+        @include lato-reg;
+        font-size: 14px;
+        line-height: 21px;
+        color: $light-purple;
+        padding: 0 35px 36px 34px;
+        @media (min-width: 481px) and (max-width: 992px) {
+          margin-bottom: 88px;
+        }
+        @media (min-width: 993px) {
+          margin-bottom: 132px;
+        }
+    
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 12px;
+          left: calc((100% - 263px) / 2);
+          width: 245px;
+          height: 2px;
+          background-color: #645766;
+          @media (min-width: 481px) and (max-width: 767px) {
+            width: 364px;
+            left: calc((100% - 364px) / 2);
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            width: 555px;
+            left: calc((100% - 555px) / 2);
+          }
+          @media (min-width: 993px) {
+            width: 780px;
+            left: calc((100% - 780px) / 2);
+          }
+        }
+        
+    }
+}
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+.item5 {
+    grid-area: item5;
+}
+.item6 {
+    grid-area: item6;
+}
