@@ -26,11 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaterinaShev/raketa.git"
+    "url": "git+https://github.com/KaterinaShev/step-forkio.git"
   },
   "bugs": {
-    "url": "https://github.com/KaterinaShev/raketa/issues"
+    "url": "https://github.com/KaterinaShev/step-forkio/issues"
   },
-  "homepage": "https://github.com/KaterinaShev/raketa#readme",
+  "homepage": "https://github.com/KaterinaShev/step-forkio#readme",
   "description": ""
 }
